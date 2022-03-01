@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.calculator {
+  max-width: 500px;
+}
+#result {
+  width: 500px;
+  padding: 2%;
+  font-size: larger;
+  cursor: none;
+}
+
+.calculator-buttons {
+  float: left;
+  width: 33.33%;
+  padding: 5%;
+  font-size: larger;
+  cursor: pointer;
+}
