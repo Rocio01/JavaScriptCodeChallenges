@@ -1,4 +1,4 @@
-class Book{
+ class Book{
   constructor(title, author, ISBN, numCopies){
     this.title = title;
     this.author = author;
@@ -34,3 +34,20 @@ HarryPotter.sell(13)
 console.log(HarryPotter.getAvailability())
 HarryPotter.sell(7)
 console.log(HarryPotter.getAvailability())
+
+class TechnicalBook extends Book {
+  constructor(title, author, ISBN, numCopies, edition){
+    super(title, author, ISBN, numCopies)
+    this.edition = edition;
+  }
+
+  getEdition(){
+    return `the current edition of this book is ${this.edition}`
+  }
+}
+
+const tbook = new TechnicalBook("El algebra de baldor", "baldor", 123456, 8, 2.5)
+
+console.log(tbook)
+
+console.log(tbook.getAvailability())
