@@ -31,16 +31,16 @@ const result = () => {
  if (computerChoice === userChoice){
   displayResult.innerHTML = "It's a Draw!!"
  }else if (computerChoice === "rock" && userChoice === "paper"){
-  displayResult.innerHTML = "You Win"
+  displayResult.innerHTML = "You Win!!"
  }else if (computerChoice === "paper" && userChoice === "scissors"){
   displayResult.innerHTML = "You Win!!"
  }else if (computerChoice === "paper" && userChoice === "rock"){
-  displayResult.innerHTML = "You lose!!"
+  displayResult.innerHTML = "You lose"
  }else if (computerChoice === "scissors" && userChoice === "rock"){
   displayResult.innerHTML = "You Win!!"
  }else if (computerChoice === "rock" && userChoice === "scissors"){
-  displayResult.innerHTML = "You lose!!"
+  displayResult.innerHTML = "You lose"
  }else if (computerChoice === "scissors" && userChoice === "paper"){
-  displayResult.innerHTML = "You lose!!"
+  displayResult.innerHTML = "You lose"
  }
 }
